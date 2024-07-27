@@ -3,13 +3,10 @@
 import os
 import sys
 
-#
-# Complete the getMoneySpent function below.
-#
+
 def getMoneySpent(keyboards, drives, b):
     max_pair = 0
-    compliment = 0
-    max_drive = 0
+
     for k in keyboards:
         for d in drives:
             if k + d <= b and k + d > max_pair:
